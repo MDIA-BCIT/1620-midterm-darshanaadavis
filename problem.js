@@ -16,15 +16,21 @@ CHALLENGE
 let Password="Midtermsarehard"
 let userInput= "WhateverUserSubmits"
 
-/*the order of the conditionals is important. The first 'if' is the most evident, if the user puts in the same string as the password set up in the let statement above, then the output will say they were granted access*/
 if (Password===userInput) {
     console.log("Access Granted!") 
-/*the first 'else if' says that if the user input isn't the same as the password AND the user input was 'forgot' then the output says it gives the user a hint*/
     } else if(userInput==="forgot"){
     console.log("Here is a hint") 
-/*the second 'else if' says that if the user input and password isn't the same AND the user input isn't 'forgot' AND the user input is 'reset', then the output will be 'let's resent your account'*/
     } else if(userInput==="reset"){
     console.log("Let's reset your account")
-/*finally, the else says that if none of the conditions about are met, then access is denied to the user. This order allows the code to only give that output when all other options have been exhausted*/
-    } else console.log("Access Denied!")
+    } else{console.log("Access Denied!")
 }
+
+//*I will be putting comments here, and be using reference to the lines of the code.*// 
+//*(16,17) I set the parameter of the password to be "Midtermsarehard" (this is up to me, the person coding). I let the paramter of the user input to be hypothetically set to "WhateverUserSubmits" because it allows the code to be run all the way through.*//
+//*The order of the conditionals is important. (19) The first 'if' is the most evident, if the user puts in the same string as the password set up in the let statement above, then the output will say they were granted access*//
+//*(21)the first 'else if' says that if the user input isn't the same as the password AND the user input was 'forgot' then the output says it gives the user a hint.*//
+//*(23)the second 'else if' says that if the user input and password isn't the same AND the user input isn't 'forgot' AND the user input is 'reset', then the output will be 'let's reset your account'*//
+//*(25)finally, the 'els'e says that if none of the conditions above are met, then access is denied to the user. This order allows the code to only give the 'access denied' output when all other options have been exhausted*//
+//*thank you so much, and hope you had a great vacation and Halloween!*//
+
+
