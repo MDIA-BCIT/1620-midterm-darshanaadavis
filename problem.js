@@ -13,3 +13,14 @@ CHALLENGE
 - If the password is less than 5 characters, log out "Your password is too short!".
 */
 
+let Password="Midtermsarehard"
+let userInput= "whateverUserInputChooses"
+
+if (Password===userInput) {
+    console.log("Access Granted!") 
+    } else if(userInput==="forgot"){
+    console.log("Here is a hint") 
+    } else if(userInput==="reset"){
+    console.log("Let's reset your account")
+    } else console.log("Access Denied!")
+}
